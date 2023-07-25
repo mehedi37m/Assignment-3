@@ -20,24 +20,23 @@
     ></script>
   </head>
   <body>
-   
-    <header class="container mx-auto">
+    <section class="container mx-auto">
       <!-- navbar start -->
-      <div class="navbar bg-base-100 lg:mt-5 bg-[#F85559] lg:rounded-full">
+      <div class="navbar bg-base-100 justify-around">
         <div class="navbar-start hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
+            <li><a>Item 1</a></li>
             <li><a>Item 1</a></li>
             <li><a>Item 1</a></li>
             <li><a>Item 1</a></li>
             <li><a>Item 3</a></li>
           </ul>
         </div>
-        <div class="lg:navbar-center sm:navbar-start">
+        <div class="sm:navbar-start navbar-center">
           <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
         </div>
-
-        <div class="navbar-end ml-10">
-          <div class="dropdown">
+        <div class="navbar-end">
+          <div class="dropdown dropdown-end">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,97 +55,106 @@
             </label>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded w-[85px]"
             >
-              <li><a>Item 1</a></li>
-              <li><a>Item 1</a></li>
-              <li><a>Item 1</a></li>
-              <li><a>Item 1</a></li>
-              <li><a>Item 1</a></li>
+              <li><a>Item</a></li>
+
+              <li><a>Item</a></li>
+
+              <li><a>Item</a></li>
+
+              <li><a>Item</a></li>
+
+              <li><a>Item</a></li>
             </ul>
           </div>
-          <!-- <input type="text" placeholder="Type here" class="input input-bordered input-info w-full max-w-xs" /> -->
+          <input
+            class="border-red-500 hidden lg:block"
+            type="search"
+            placeholder="search"
+          />
         </div>
       </div>
       <!-- navbar end -->
 
-      <!-- carosel start -->
-      <section class="container mt-9">
-        <div class="carousel lg:w-full">
-          <div id="slide1" class="carousel-item relative w-full">
-            <img src="/images/banner1.png" class="w-full" />
-            <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-            >
-              <a href="#slide4" class="btn btn-circle">❮</a>
-              <a href="#slide2" class="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide2" class="carousel-item relative w-full">
-            <img src="/images/banner2.png" class="w-full" />
-            <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-            >
-              <a href="#slide1" class="btn btn-circle">❮</a>
-              <a href="#slide3" class="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide3" class="carousel-item relative w-full">
-            <img src="/images/banner3.png" class="w-full" />
-            <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-            >
-              <a href="#slide2" class="btn btn-circle">❮</a>
-              <a href="#slide4" class="btn btn-circle">❯</a>
-            </div>
-          </div>
-          <div id="slide4" class="carousel-item relative w-full">
-            <img src="/images/banner3.png" class="w-full" />
-            <div
-              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
-            >
-              <a href="#slide3" class="btn btn-circle">❮</a>
-              <a href="#slide1" class="btn btn-circle">❯</a>
-            </div>
+      <!-- carousel start -->
+      <div class="carousel w-full mt-6 lg:h-[450px]">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="/images/banner1.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
         </div>
-        <div
-          class="mx-auto w-[1196px] relative h-[250px] border bg-[#fff] border-rose-500 mt-[-140px] hidden lg:block"
-        >
-          <div class="grid grid-cols-5 gap-4 justify-center px-3 my-3">
-            <div>
-              <img src="./images/fruit1.png" />
-            </div>
-            <div>
-              <img src="./images/fruit1.png" />
-            </div>
-            <div>
-              <img src="./images/fruit1.png" />
-            </div>
-            <div>
-              <img src="./images/fruit1.png" />
-            </div>
-            <div>
-              <img src="./images/fruit1.png" />
-            </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="/images/banner2.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
           </div>
         </div>
-      </section>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="/images/banner3.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="/images/banner3.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
 
-      <!-- carosel end -->
-    </header>
-    <!-- main  -->
-    <section class="container mx-auto mt-10">
-      <div class="lg:flex justify-between">
-        <div class="">
-          <h1 class="text-5xl font-bold mb-5">Deal of the day</h1>
-          <p>
-            Contrary to popular belief, is not simply random text. It has roots
-            in a piece of classical <br> Latin literature from 45 BC, making it over
-            2000 years old.
-          </p>
+      <div
+        class="mx-auto w-[1196px] relative h-[250px] border bg-[#fff] border-rose-500 mt-[-140px] hidden lg:block"
+      >
+        <div class="grid grid-cols-5 gap-4 justify-center px-3 my-3">
+          <div>
+            <img src="./images/fruit1.png" />
+          </div>
+          <div>
+            <img src="./images/fruit1.png" />
+          </div>
+          <div>
+            <img src="./images/fruit1.png" />
+          </div>
+          <div>
+            <img src="./images/fruit1.png" />
+          </div>
+          <div>
+            <img src="./images/fruit1.png" />
+          </div>
         </div>
-        <div class="">
+      </div>
+      <!-- carousel end -->
+    </section>
+
+    <!-- main start -->
+    <section class="md:container md:mx-auto mt-10 mb-10">
+      <div class="lg:flex lg:justify-between sm:mt-6 lg:mb-8">
+        <div class="grid justify-items-center">
+          <h1 class="lg:text-5xl text-2xl font-extrabold">Deal of the day</h1>
+          <div class="sm:w-[277px] lg:w-[615px] sm:mt-2 lg:mt-6">
+            <p class="font-medium sm:text-[14px] lg:text-[16px]">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+        </div>
+        <div class="grid justify-items-center">
           <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
@@ -176,7 +184,9 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+      <div
+        class="grid justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3"
+      >
         <div class="card w-[342px] bg-[#FFF] shadow-xl">
           <figure class="px-10 pt-10">
             <img src="/images/fruit1.png" alt="Shoes" class="rounded-xl" />
@@ -192,14 +202,16 @@
               <i class="fa-solid fa-star"></i>
             </div>
 
-           
             <!-- Open the modal using ID.showModal() method -->
             <button class="btn" onclick="my_modal_1.showModal()">
               Details
             </button>
             <dialog id="my_modal_1" class="modal">
-              <form method="dialog" class="modal-box">
-                <div class="card w-[342px] bg-[#FFF] shadow-xl">
+              <form
+                method="dialog"
+                class="modal-box card w-[342px] bg-[#FFF] shadow-xl"
+              >
+                <div class="">
                   <figure class="px-10 pt-10">
                     <img
                       src="/images/fruit1.png"
@@ -217,18 +229,17 @@
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                     </div>
+                    <div class="modal-action flex items-center">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">close</button>
+                      <button class="btn">BUY</button>
+                    </div>
                   </div>
-                </div>
-                <div class="modal-action">
-                  <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">close</button>
-                  <button class="btn">BUY</button>
                 </div>
               </form>
             </dialog>
           </div>
         </div>
-
         <div class="card w-[342px] bg-[#FFF] shadow-xl">
           <figure class="px-10 pt-10">
             <img src="/images/fruit1.png" alt="Shoes" class="rounded-xl" />
@@ -245,12 +256,15 @@
             </div>
 
             <!-- Open the modal using ID.showModal() method -->
-            <button class="btn" onclick="my_modal_1.showModal()">
+            <button class="btn" onclick="my_modal_2.showModal()">
               Details
             </button>
             <dialog id="my_modal_2" class="modal">
-              <form method="dialog" class="modal-box">
-                <div class="card w-[342px] bg-[#FFF] shadow-xl">
+              <form
+                method="dialog"
+                class="modal-box card w-[342px] bg-[#FFF] shadow-xl"
+              >
+                <div class="">
                   <figure class="px-10 pt-10">
                     <img
                       src="/images/fruit1.png"
@@ -268,20 +282,17 @@
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                     </div>
+                    <div class="modal-action flex items-center">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">close</button>
+                      <button class="btn">BUY</button>
+                    </div>
                   </div>
-                </div>
-                <div class="modal-action">
-                  <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">close</button>
-                  <button class="btn">BUY</button>
-
-                  Rahim F, [7/26/2023 12:13 AM]
                 </div>
               </form>
             </dialog>
           </div>
         </div>
-
         <div class="card w-[342px] bg-[#FFF] shadow-xl">
           <figure class="px-10 pt-10">
             <img src="/images/fruit1.png" alt="Shoes" class="rounded-xl" />
@@ -298,12 +309,15 @@
             </div>
 
             <!-- Open the modal using ID.showModal() method -->
-            <button class="btn" onclick="my_modal_1.showModal()">
+            <button class="btn" onclick="my_modal_3.showModal()">
               Details
             </button>
             <dialog id="my_modal_3" class="modal">
-              <form method="dialog" class="modal-box">
-                <div class="card w-[342px] bg-[#FFF] shadow-xl">
+              <form
+                method="dialog"
+                class="modal-box card w-[342px] bg-[#FFF] shadow-xl"
+              >
+                <div class="">
                   <figure class="px-10 pt-10">
                     <img
                       src="/images/fruit1.png"
@@ -321,18 +335,17 @@
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                     </div>
+                    <div class="modal-action flex items-center">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">close</button>
+                      <button class="btn">BUY</button>
+                    </div>
                   </div>
-                </div>
-                <div class="modal-action">
-                  <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">close</button>
-                  <button class="btn">BUY</button>
                 </div>
               </form>
             </dialog>
           </div>
         </div>
-
         <div class="card w-[342px] bg-[#FFF] shadow-xl">
           <figure class="px-10 pt-10">
             <img src="/images/fruit1.png" alt="Shoes" class="rounded-xl" />
@@ -349,12 +362,15 @@
             </div>
 
             <!-- Open the modal using ID.showModal() method -->
-            <button class="btn" onclick="my_modal_1.showModal()">
+            <button class="btn" onclick="my_modal_4.showModal()">
               Details
             </button>
             <dialog id="my_modal_4" class="modal">
-              <form method="dialog" class="modal-box">
-                <div class="card w-[342px] bg-[#FFF] shadow-xl">
+              <form
+                method="dialog"
+                class="modal-box card w-[342px] bg-[#FFF] shadow-xl"
+              >
+                <div class="">
                   <figure class="px-10 pt-10">
                     <img
                       src="/images/fruit1.png"
@@ -372,12 +388,12 @@
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                     </div>
+                    <div class="modal-action flex items-center">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn">close</button>
+                      <button class="btn">BUY</button>
+                    </div>
                   </div>
-                </div>
-                <div class="modal-action">
-                  <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">close</button>
-                  <button class="btn">BUY</button>
                 </div>
               </form>
             </dialog>
@@ -410,7 +426,8 @@
             </div>
 
             <div
-              class="flex-1 lg:flex text-center justify-center items-center gap-20"
+              class="grid lg:grid-cols-4 grid-cols-1 justify-items-center gap-5"
+              
             >
               <div class="flex">
                 <div class="text-center">
@@ -473,117 +490,127 @@
 
         <div class="flex-1 lg:flex mb-10">
           <!-- first part -->
-         <div class="flex-1 ">
-          <div class="flex-1 ">
-            <div class="flex gap-5">
-              <div>
-                <i class="text-4xl fa-solid fa-person"></i>
-              </div>
-              <div class="mb-10">
-                <h2 class="mb-5 text-2xl font-bold">Dedicated Team</h2>
-                <div class="border border-black w-24 mb-5"></div>
-                <p>
-                  Professional employees are there for you to pick <br />
-                  the most amazing and fresh fruits.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- second part -->
           <div class="flex-1">
-            <div class="flex gap-5">
-              <div>
-                <i class="fa-solid fa-heart-circle-check text-4xl"></i>
+            <div class="flex-1">
+              <div class="flex gap-5">
+                <div>
+                  <i class="text-4xl fa-solid fa-person"></i>
+                </div>
+                <div class="mb-10">
+                  <h2 class="mb-5 text-2xl font-bold">Dedicated Team</h2>
+                  <div class="border border-black w-24 mb-5"></div>
+                  <p>
+                    Professional employees are there for you to pick
+                    <br />
+                    the most amazing and fresh fruits.
+                  </p>
+                </div>
               </div>
-              <div class="mb-10">
-                <h2 class="mb-5 text-2xl font-bold">Fresh is Best</h2>
-                <div class="border border-black w-24 mb-5"></div>
-                <p>
-                  Professional employees are there for you to pick <br />
-                  the most amazing and fresh fruits.
-                </p>
+            </div>
+            <!-- second part -->
+            <div class="flex-1">
+              <div class="flex gap-5">
+                <div>
+                  <i class="fa-solid fa-heart-circle-check text-4xl"></i>
+                </div>
+                <div class="mb-10">
+                  <h2 class="mb-5 text-2xl font-bold">Fresh is Best</h2>
+                  <div class="border border-black w-24 mb-5"></div>
+                  <p>
+                    Professional employees are there for you to pick
+                    <br />
+                    the most amazing and fresh fruits.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- third part -->
+            <div class="flex-1">
+              <div class="flex gap-5">
+                <div>
+                  <i class="text-4xl fa-solid fa-gift"></i>
+                </div>
+                <div class="mb-10">
+                  <h2 class="mb-5 text-2xl font-bold">Gift Certificates</h2>
+                  <div class="border border-black w-24 mb-5"></div>
+                  <p>
+                    Professional employees are there for you to pick
+                    <br />
+                    the most amazing and fresh fruits.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <!-- third part -->
+
           <div class="flex-1">
-            <div class="flex  gap-5">
-              <div>
-                <i class="text-4xl fa-solid fa-gift"></i>
-              </div>
-              <div class="mb-10">
-                <h2 class="mb-5 text-2xl font-bold">Gift Certificates</h2>
-                <div class="border border-black w-24 mb-5"></div>
-                <p>
-                  Professional employees are there for you to pick <br />
-                  the most amazing and fresh fruits.
-                </p>
-              </div>
-            </div>
+            <img src="./images/whychoose1.png" alt="" />
           </div>
-         </div>
 
-
-         <div class="flex-1">
-          <img src="./images/whychoose1.png" alt="">
-         </div>
-
-
-
-         <div class="flex-1">
           <div class="flex-1">
-            <div class="flex  gap-5">
-            
-              <div class="mb-10">
-                <h2 class="text-right mb-5 text-2xl font-bold">Dedicated Team</h2>
-                <div class="relative left-60 border border-black w-24 mb-5"></div>
-                <p class="text-right">
-                  Professional employees are there for you to pick <br />
-                  the most amazing and fresh fruits.
-                </p>
+            <div class="flex-1">
+              <div class="flex gap-5">
+                <div class="mb-10">
+                  <h2 class="text-right mb-5 text-2xl font-bold">
+                    Dedicated Team
+                  </h2>
+                  <div
+                    class="relative left-60 border border-black w-24 mb-5"
+                  ></div>
+                  <p class="text-right">
+                    Professional employees are there for you to pick
+                    <br />
+                    the most amazing and fresh fruits.
+                  </p>
+                </div>
+                <div>
+                  <i class="text-4xl fa-solid fa-burger"></i>
+                </div>
               </div>
-              <div>
-                <i class="text-4xl fa-solid fa-burger"></i>
+            </div>
+            <!-- second part -->
+            <div class="flex-1">
+              <div class="flex gap-5">
+                <div class="mb-10">
+                  <h2 class="text-right mb-5 text-2xl font-bold">
+                    Fresh is Best
+                  </h2>
+                  <div
+                    class="relative left-60 border border-black w-24 mb-5"
+                  ></div>
+                  <p class="text-right">
+                    Professional employees are there for you to pick
+                    <br />
+                    the most amazing and fresh fruits.
+                  </p>
+                </div>
+                <div>
+                  <i class="text-4xl fa-solid fa-ice-cream"></i>
+                </div>
+              </div>
+            </div>
+            <!-- third part -->
+            <div class="flex-1">
+              <div class="flex gap-5">
+                <div class="mb-10">
+                  <h2 class="mb-5 text-2xl font-bold text-right">
+                    Gift Certificates
+                  </h2>
+                  <div
+                    class="border border-black relative left-60 w-24 mb-5"
+                  ></div>
+                  <p class="text-right">
+                    Professional employees are there for you to pick
+                    <br />
+                    the most amazing and fresh fruits.
+                  </p>
+                </div>
+                <div>
+                  <i class="text-4xl fa-regular fa-thumbs-up"></i>
+                </div>
               </div>
             </div>
           </div>
-          <!-- second part -->
-          <div class="flex-1">
-            <div class="flex  gap-5">
-            
-              <div class="mb-10">
-                <h2 class="text-right mb-5 text-2xl font-bold">Fresh is Best</h2>
-                <div class="relative left-60 border border-black w-24 mb-5"></div>
-                <p class="text-right">
-                  Professional employees are there for you to pick <br />
-                  the most amazing and fresh fruits.
-                </p>
-              </div>
-              <div>
-                <i class="text-4xl fa-solid fa-ice-cream"></i>
-              </div>
-            </div>
-          </div>
-          <!-- third part -->
-          <div class="flex-1">
-            <div class="flex  gap-5">
-             
-              <div class="mb-10">
-                <h2 class="mb-5 text-2xl font-bold text-right">Gift Certificates</h2>
-                <div class=" border border-black relative left-60 w-24 mb-5"></div>
-                <p class="text-right">
-                  Professional employees are there for you to pick <br />
-                  the most amazing and fresh fruits.
-                </p>
-              </div>
-              <div>
-                <i class="text-4xl fa-regular fa-thumbs-up"></i>
-              </div>
-            </div>
-          </div>
-         </div>
-
-         
         </div>
       </section>
     </main>
