@@ -4,8 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+<!-- daisyui -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+ 
+<!-- fontawesome -->
+<script src="https://kit.fontawesome.com/dcd5e437b3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header class="container mx-auto  ">
+        <nav class="bg-[#F85559] p-10 mt-10 rounded-full ">
+            <div class="container mx-auto flex items-center justify-between">
+        
+              <!-- Left-side items -->
+              <div class="flex items-center space-x-4">
+                <!-- Home link -->
+                <a href="#" class="text-white font-semibold">Home</a>
+                <!-- About Us link -->
+                <a href="#" class="text-white font-semibold">About Us</a>
+                <!-- Shop link -->
+                <a href="#" class="text-white font-semibold">Shop</a>
+                <!-- AllFruit link -->
+                <a href="#" class="text-white font-semibold">AllFruit</a>
+              </div>
+        
+              <!-- Middle (Logo) -->
+              <a href="#" class="text-white text-2xl font-bold hidden md:block">Logo</a>
+              <!-- On mobile, show the logo only on screens larger than md -->
+        
+              <!-- Right-side items -->
+              <div class="flex items-center space-x-4">
+                <!-- Search option -->
+                <input type="text" placeholder="Search" class="p-2 rounded-md bg-gray-700 text-white">
+                <!-- Add other right-side items as needed -->
+              </div>
+        
+            </div>
+          </nav>
+
+        
+    </header>
+    <main class="container mx-auto">
+          
+        <section>
+            
+        </section>
+
+    </main>
+    <footer class="footer text-center footer-center p-10 bg-black text-white">
+        <div class="flex ">
+            <img src="./images/logo.png" alt="">
+            <h2 class="text-3xl font-bold">Fruit Burst</h2>
+        </div>
+        <div class="grid grid-cols-3 lg:grid-flow-col gap-10">
+          <a class="link link-hover">About us</a> 
+          <a class="link link-hover">Contact</a> 
+          <a class="link link-hover">Shop</a> 
+          <a class="link link-hover">All Fruits</a>
+          <a class="link link-hover">Support</a>
+          <a class="link link-hover">My Account</a>
+        </div> 
+        <div>
+          <div class="grid grid-cols-3 lg:grid-flow-col gap-10 text-2xl">
+            <a><i class="fa-brands fa-twitter"></i></a> 
+            <a><i class="fa-brands fa-facebook"></i></a>
+            <a><i class="fa-brands fa-youtube"></i></a>
+            <a><i class="fa-brands fa-linkedin"></i></a>
+            <a><i class="fa-brands fa-instagram"></i></a>
+            <a><i class="fa-brands fa-apple"></i></a>
+
+          </div>
+        </div> 
+        
+      </footer>
 </body>
 </html>
