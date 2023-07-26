@@ -22,18 +22,18 @@
   <body>
     <section class="container mx-auto">
       <!-- navbar start -->
-      <div class="navbar bg-base-100 justify-around">
+      <div class="navbar bg-[#F85559] lg:p-10 text-white rounded-full justify-around">
         <div class="navbar-start hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a>Item 1</a></li>
-            <li><a>Item 1</a></li>
-            <li><a>Item 1</a></li>
-            <li><a>Item 1</a></li>
-            <li><a>Item 3</a></li>
+          <ul class="menu menu-horizontal px-1 text-xl">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
           </ul>
         </div>
         <div class="sm:navbar-start navbar-center">
-          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <img src="./images/logo.png" alt="">
+          <a class="btn btn-ghost normal-case text-3xl font-bold">Fruit Burst</a>
         </div>
         <div class="navbar-end">
           <div class="dropdown dropdown-end">
@@ -57,15 +57,10 @@
               tabindex="0"
               class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded w-[85px]"
             >
-              <li><a>Item</a></li>
-
-              <li><a>Item</a></li>
-
-              <li><a>Item</a></li>
-
-              <li><a>Item</a></li>
-
-              <li><a>Item</a></li>
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
             </ul>
           </div>
           <input
@@ -80,7 +75,7 @@
       <!-- carousel start -->
       <div class="carousel w-full mt-6 lg:h-[450px]">
         <div id="slide1" class="carousel-item relative w-full">
-          <img src="/images/banner1.png" class="w-full" />
+          <img src="./images/banner1.png" class="w-full" />
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
@@ -89,7 +84,7 @@
           </div>
         </div>
         <div id="slide2" class="carousel-item relative w-full">
-          <img src="/images/banner2.png" class="w-full" />
+          <img src="./images/banner2.png" class="w-full" />
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
@@ -98,7 +93,7 @@
           </div>
         </div>
         <div id="slide3" class="carousel-item relative w-full">
-          <img src="/images/banner3.png" class="w-full" />
+          <img src="./images/banner3.png" class="w-full" />
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
@@ -107,7 +102,7 @@
           </div>
         </div>
         <div id="slide4" class="carousel-item relative w-full">
-          <img src="/images/banner3.png" class="w-full" />
+          <img src="./images/banner4.png" class="w-full" />
           <div
             class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
           >
@@ -121,27 +116,31 @@
         class="mx-auto w-[1196px] relative h-[250px] border bg-[#fff] border-rose-500 mt-[-140px] hidden lg:block"
       >
         <div class="grid grid-cols-5 gap-4 justify-center px-3 my-3">
-          <div>
+          <div class=" grid justify-items-center">
             <img src="./images/fruit1.png" />
+            <h3 class="font-bold ">Strawberry</h3>
           </div>
-          <div>
-            <img src="./images/fruit1.png" />
+          <div class=" grid justify-items-center">
+            <img src="./images/fruit2.png" />
+            <h3 class="font-bold ">Orange</h3>
           </div>
-          <div>
-            <img src="./images/fruit1.png" />
+          <div class=" grid justify-items-center">
+            <img src="./images/fruit3.png" />
+            <h3 class="font-bold ">Mango</h3>
           </div>
-          <div>
-            <img src="./images/fruit1.png" />
+          <div class=" grid justify-items-center">
+            <img src="./images/fruit4.png" />
+            <h3 class="font-bold ">Strawberry</h3>
           </div>
-          <div>
-            <img src="./images/fruit1.png" />
+          <div class=" grid justify-items-center">
+            <img src="./images/fruit5.png" />
+            <h3 class="font-bold ">Mango</h3>
           </div>
         </div>
       </div>
       <!-- carousel end -->
     </section>
 
-    <!-- main start -->
     <section class="md:container md:mx-auto mt-10 mb-10">
       <div class="lg:flex lg:justify-between sm:mt-6 lg:mb-8">
         <div class="grid justify-items-center">
@@ -427,7 +426,6 @@
 
             <div
               class="grid lg:grid-cols-4 grid-cols-1 justify-items-center gap-32"
-              
             >
               <div class="flex">
                 <div class="text-center">
@@ -482,16 +480,16 @@
         <div class="text-center mb-5">
           <h2 class="text-4xl font-extrabold mb-8">Why Choose Us</h2>
           <p class="mb-14">
-            Contrary to popular belief, is not simply random text. It has roots in
-            a piece of classical <br />
+            Contrary to popular belief, is not simply random text. It has roots
+            in a piece of classical <br />
             Latin literature from 45 BC, making it over 2000 years old.
           </p>
         </div>
-  
+
         <div class="grid grid-cols-1 justify-items-center lg:grid-cols-3 mb-10">
           <!-- first part -->
           <div class="grid content-center lg:text-start text-center">
-            <div class="lg:flex gap-5 ">
+            <div class="lg:flex gap-5">
               <div>
                 <i class="text-4xl fa-solid fa-person"></i>
               </div>
@@ -505,9 +503,9 @@
                 </p>
               </div>
             </div>
-  
+
             <!-- second part -->
-  
+
             <div class="lg:flex gap-5">
               <div>
                 <i class="fa-solid fa-heart-circle-check text-4xl"></i>
@@ -522,9 +520,9 @@
                 </p>
               </div>
             </div>
-  
+
             <!-- third part -->
-  
+
             <div class="lg:flex gap-5">
               <div>
                 <i class="text-4xl fa-solid fa-gift"></i>
@@ -540,17 +538,17 @@
               </div>
             </div>
           </div>
-  
+
           <div class="flex-1">
             <img src="./images/whychoose1.png" alt="" />
           </div>
-  
+
           <div class="grid content-center lg:text-start text-center">
             <div class="flex-1">
               <div class="flex gap-5">
                 <div class="mb-10">
                   <h2 class="text-right mb-5 text-2xl font-bold">
-                      Integrated Supplier
+                    Integrated Supplier
                   </h2>
                   <div
                     class="relative left-60 border border-black w-24 mb-5"
@@ -571,7 +569,7 @@
               <div class="flex gap-5">
                 <div class="mb-10">
                   <h2 class="text-right mb-5 text-2xl font-bold">
-                      Sustainable Practice
+                    Sustainable Practice
                   </h2>
                   <div
                     class="relative left-60 border border-black w-24 mb-5"
@@ -592,7 +590,7 @@
               <div class="flex gap-5">
                 <div class="mb-10">
                   <h2 class="mb-5 text-2xl font-bold text-right">
-                      The Benefits Only
+                    The Benefits Only
                   </h2>
                   <div
                     class="border border-black relative left-60 w-24 mb-5"
